@@ -1,0 +1,19 @@
+logging:
+  level:
+  io:
+    netty: DEBUG
+    reactor: DEBUG
+  org:
+    springframework:
+      cloud: DEBUG
+      integration: DEBUG
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: learning-spring-boot-comments
+          group: learning-spring-boot
+        output:
+          destination: learning-spring-boot-comments
+          group: learning-spring-boot
